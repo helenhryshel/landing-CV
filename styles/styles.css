@@ -132,7 +132,8 @@
 
 .skills__items {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  gap: 22px;
 }
 
 .skills__item {
@@ -143,9 +144,51 @@
   margin-bottom: 51px;
 }
 
+.skills__item-sass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 64px;
+}
+
+.skills__item-git {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 11px;
+}
+
+.skills__item-js {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 64px;
+}
+
 .items {
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.skills__item-stars {
+  display: flex;
+  gap: 13px;
+}
+
+.stars-checked {
+  background-image: url("../images/svg/star-checked.svg");
+  width: 22px;
+  height: 21px;
+}
+
+.star {
+  background-image: url("../images/svg/star.svg");
+  width: 21px;
+  height: 21px;
 }
 
 .image-html {
@@ -164,22 +207,39 @@
   background-image: url("../images/svg/sass.svg");
   width: 100px;
   height: 75px;
+  margin-bottom: 19px;
 }
 
 .image-git {
   background-image: url("../images/svg/git.svg");
   width: 120px;
   height: 50px;
+  margin-bottom: 35px;
 }
 
 .image-js {
   background-image: url("../images/svg/javascript.svg");
   width: 78px;
   height: 78px;
+  margin-bottom: 15px;
 }
 
 .image-github {
   background-image: url("../images/svg/github.svg");
   width: 100px;
   height: 100px;
+}
+
+.vector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 72px 0;
+}
+
+.image-vector {
+  background-image: url("../images/svg/vector.svg");
+  width: 32px;
+  height: 19px;
+  cursor: pointer;
 }
