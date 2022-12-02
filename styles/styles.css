@@ -1,0 +1,185 @@
+@import "fonts.css";
+:root {
+  --header-color: #3d3b3c;
+  --text-color: #120d0e;
+  --gray-color: #bebebe;
+  --button-color: #3a4576;
+  --white-color: #ffffff;
+  --skills-color: #fafafa;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.top-section__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px 40px 0;
+}
+
+.top-section__header_item {
+  text-decoration: none;
+  color: var(--header-color);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.top-section__header_item:focus {
+  text-decoration-line: line-through;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.top-section__line {
+  width: 100%;
+  border: 1px solid var(--header-color);
+}
+
+#about {
+  display: flex;
+  padding: 72px 0;
+}
+
+.about__person {
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+}
+
+.about__person_info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.about__person_name {
+  font-size: 56px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.about__person_position {
+  font-size: 56px;
+  font-weight: 500;
+  color: var(--gray-color);
+}
+
+.about__person_biography {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--header-color);
+  margin-bottom: 72px;
+  width: 72%;
+}
+
+.about__person_buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.button {
+  width: 185px;
+  height: 56px;
+  background-color: var(--button-color);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--white-color);
+  border: none;
+  cursor: pointer;
+}
+
+.about__photo {
+  background-image: url("../images/photo.png");
+  width: 414px;
+  height: 464px;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--skills-color);
+}
+
+.skills__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 72px;
+  margin-bottom: 56px;
+  font-weight: 500;
+  font-size: 56px;
+}
+
+.skills__items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 51px;
+}
+
+.items {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.image-html {
+  background-image: url("../images/svg/HTML5.svg");
+  width: 100px;
+  height: 100px;
+}
+
+.image-css {
+  background-image: url("../images/svg/css3.svg");
+  width: 72px;
+  height: 100px;
+}
+
+.image-sass {
+  background-image: url("../images/svg/sass.svg");
+  width: 100px;
+  height: 75px;
+}
+
+.image-git {
+  background-image: url("../images/svg/git.svg");
+  width: 120px;
+  height: 50px;
+}
+
+.image-js {
+  background-image: url("../images/svg/javascript.svg");
+  width: 78px;
+  height: 78px;
+}
+
+.image-github {
+  background-image: url("../images/svg/github.svg");
+  width: 100px;
+  height: 100px;
+}
