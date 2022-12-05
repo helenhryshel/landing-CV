@@ -6,6 +6,8 @@
   --button-color: #3a4576;
   --white-color: #ffffff;
   --skills-color: #fafafa;
+  --timeline-circle: #c4c4c4;
+  --timeline-blue: #3a4576;
 }
 
 * {
@@ -242,4 +244,131 @@
   width: 32px;
   height: 19px;
   cursor: pointer;
+}
+
+/* work experience */
+.work_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+  margin-bottom: 56px;
+  font-size: 56px;
+  font-weight: 500;
+}
+.timeline {
+  position: relative;
+  max-width: 1230px;
+  height: 637px;
+  padding: 55px 0;
+  margin-bottom: 72px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--header-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.work {
+  padding: 10px 21px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.right {
+  left: 50%;
+}
+
+.left {
+  left: 0;
+}
+
+.circle:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: -4px;
+  background-color: var(--timeline-circle);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle-blue {
+  width: 62%;
+  display: flex;
+  align-items: center;
+  color: var(--timeline-blue);
+}
+
+.work-date {
+  width: 46%;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.work-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.job {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 24px;
+}
+
+.job-place {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.job-name {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.job-experience {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--gray-color);
+  width: 65%;
+}
+
+.circle-blue:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: -8px;
+  background-color: var(--timeline-blue);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle-last:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: -8px;
+  background-color: var(--timeline-circle);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle-last {
+  width: 62%;
+  display: flex;
+  align-items: center;
 }
